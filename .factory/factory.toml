@@ -1,0 +1,20 @@
+# Factory settings for divisey/climbings, on the factory_board branch.
+base = "main"
+owners = ["davy", "divisey"]
+
+# Bootstrap check only: replace this with the application's actual tests
+# when application code and its test tooling are introduced.
+test = "git show --format= --check HEAD"
+after_change = []
+read = ["README.md"]
+never = [".github/workflows/", ".factory/factory.toml"]
+rules = [
+  "Scripted tests get a throwaway HOME.",
+  "Build and review are manual unless the owner explicitly requests scheduling.",
+  "Ship only when the owner explicitly asks; do not schedule automatic shipping.",
+  "When adding application code, run its actual tests and report the command that should replace the bootstrap test.",
+]
+max_rounds = 3
+ship = ["merge", "tag", "push"]
+prefix = "FT"
+timezone = "Asia/Shanghai"
