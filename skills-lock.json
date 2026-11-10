@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "factory": {
+      "source": "lyricat/agent-skills",
+      "ref": "master",
+      "sourceType": "github",
+      "computedHash": "cc67f478bab180a804a87b5e191ae9b4f8316d52420acc1a602edb5829951307"
+    }
+  }
+}
